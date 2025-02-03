@@ -1,0 +1,17 @@
+form > div {
+  margin: 10px;
+}
+
+.submit-btn {
+  margin: 10px;
+  text-align: right;
+}
+
+#dataList {
+  margin: 50px;
+}
+
+th,
+td {
+  border: 1px solid black;
+}

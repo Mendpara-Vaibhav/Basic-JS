@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURD Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <form onsubmit="event.preventDefault(); onFormSubmit() ">
+            <div>
+              <label for="fname">First Name</label>
+              <input type="text" name="fname" id="fname" />
+            </div>
+            <div>
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" id="lname" />
+            </div>
+            <div class="submit-btn">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </td>
+        <td>
+          <table id="dataList">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Option</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>

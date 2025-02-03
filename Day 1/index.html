@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Basic JS</h1>
+    <p id="demo"></p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = Date()"
+    >
+      Click me to know Date and time
+    </button>
+    <hr />
+
+    <div id="box" style="border: 1px solid black; height: 50px; width: 50px">
+      box
+    </div>
+    <button onclick="document.getElementById('box').innerText='box open' ">
+      Turn on
+    </button>
+    <button onclick="document.getElementById('box').innerText='box close' ">
+      Turn off
+    </button>
+    <hr />
+    <p id="size">This is a paragraph</p>
+    <button onclick="document.getElementById('size').style.fontSize='30px' ">
+      Click me to change CSS
+    </button>
+    <hr />
+    <p id="color">This is a paragraph</p>
+    <button onclick="document.getElementById('color').style.color='blue' ">
+      Click me to change CSS
+    </button>
+    <hr />
+    <p id="hide">This is a paragraph</p>
+    <button onclick="document.getElementById('hide').style.display='none' ">
+      Click me to hide para.
+    </button>
+    <button onclick="document.getElementById('hide').style.display='block' ">
+      Click me to get para back.
+    </button>
+    <hr />
+    <button onclick="window.print()">print the page</button>
+    <hr />
+    <h3>Object display properties</h3>
+    <p id="display"></p>
+    <p id="arr"></p>
+    <p id="str"></p>
+    <hr />
+    <h3>Object.entries()</h3>
+    <p id="demos"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
