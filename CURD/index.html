@@ -13,11 +13,15 @@
           <form onsubmit="event.preventDefault(); onFormSubmit() ">
             <div>
               <label for="fname">First Name</label>
-              <input type="text" name="fname" id="fname" />
+              <input type="text" name="fname" id="fname" required />
             </div>
             <div>
               <label for="lname">Last Name</label>
-              <input type="text" name="lname" id="lname" />
+              <input type="text" name="lname" id="lname" required />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="number" name="password" id="password" required />
             </div>
             <div class="submit-btn">
               <input type="submit" value="Submit" />
@@ -30,6 +34,7 @@
               <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
+                <th>Password</th>
                 <th>Option</th>
               </tr>
             </thead>

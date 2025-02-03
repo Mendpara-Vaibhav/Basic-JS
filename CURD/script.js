@@ -17,6 +17,7 @@ function readFormData() {
   let formData = {};
   formData.fname = document.getElementById("fname").value;
   formData.lname = document.getElementById("lname").value;
+  formData.password = document.getElementById("password").value;
   return formData;
 }
 
@@ -28,6 +29,7 @@ function updateTable() {
     table += `<tr>`;
     table += `<td>${element.fname}</td>`;
     table += `<td>${element.lname}</td>`;
+    table += `<td>${element.password}</td>`;
     table += `<td>${`<a onclick=onEdit(${index})>Edit</a> / <a onclick=onDelete(${index})>Delete</a> `}</td>`;
     table += `</tr>`;
   });
@@ -37,6 +39,7 @@ function updateTable() {
 function reset() {
   document.getElementById("fname").value = "";
   document.getElementById("lname").value = "";
+  document.getElementById("password").value = "";
   selectedRowIndex = null;
 }
 
@@ -45,6 +48,7 @@ function onEdit(index) {
   let selectedRow = arr[index];
   document.getElementById("fname").value = selectedRow.fname;
   document.getElementById("lname").value = selectedRow.lname;
+  document.getElementById("password").value = selectedRow.password;
 }
 
 function updateTableData(formData) {
